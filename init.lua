@@ -19,11 +19,11 @@ require 'user.tabline'
 require 'user.comment'
 
 
-require 'user.go'
+--require 'user.go'
 
 require 'user.indentline'
 require 'user.cursorword'
---[[ require 'user.indentscope' ]]
+require 'user.indentscope'
 
 
 require 'user.lastplace'
@@ -45,4 +45,4 @@ require 'user.todo-comments'
 require 'user.neotree'
 require 'user.gitsigns'
 require 'user.mason'
-
+require('nvim-toggler').setup()

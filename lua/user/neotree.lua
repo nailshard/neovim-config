@@ -20,6 +20,7 @@ vim.fn.sign_define("DiagnosticSignHint",
 -- in the form "LspDiagnosticsSignWarning"
 
 neotree.setup({
+ 	parser_install_dir = "/usr/share/nvim/site/pack/dist/start/nvim-treesitter/parser",
 	close_if_last_window = false, -- Close Neo-tree if it is the last window left in the tab
 	popup_border_style = "rounded",
 	enable_git_status = true,
@@ -207,4 +208,4 @@ neotree.setup({
 	}
 })
 
-vim.cmd([[nnoremap \ :Neotree reveal<cr>]])
+vim.cmd([[nnoremap \\n :Neotree reveal<cr>]])

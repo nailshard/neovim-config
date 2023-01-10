@@ -114,6 +114,8 @@ return packer.startup(function(use)
 
 	use 'ray-x/go.nvim'
 
+    use 'folke/tokyonight.nvim'
+
 	use({
 		'rose-pine/neovim',
 		as = 'rose-pine',
@@ -156,7 +158,7 @@ return packer.startup(function(use)
 
 	use 'echasnovski/mini.nvim'
 
-
+    use { 'nguyenvukhang/nvim-toggler' }
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

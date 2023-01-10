@@ -25,7 +25,7 @@ local options = {
 	undodir = os.getenv("HOME") .. "/.local/share/nvim/undodir", -- enable persistent undo
 	updatetime = 300, -- faster completion (4000ms default)
 	writebackup = false, -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
-	expandtab = false, -- convert tabs to spaces
+	expandtab = true, -- convert tabs to spaces
 	shiftwidth = 4, -- the number of spaces inserted for each indentation
 	tabstop = 4, -- insert 2 spaces for a tab
 	cursorline = true, -- highlight the current line
@@ -41,7 +41,7 @@ local options = {
 	lazyredraw = true,
 	autoread = true,
 	ttimeoutlen = 5,
-	shell = "fish",
+	shell = "zsh",
 	shadafile = "NONE",
 	incsearch = true,
 	wildmenu = true,
@@ -57,5 +57,5 @@ for k, v in pairs(options) do
 	vim.opt[k] = v
 end
 
-vim.cmd("set whichwrap+=<,>,[,],h,l")
+vim.cmd("set whichwrap+=<,>,[,]")
 vim.cmd([[set iskeyword+=-]])

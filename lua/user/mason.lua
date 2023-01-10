@@ -10,7 +10,7 @@ require("mason").setup({
 		},
 	},
 	pip = {
-		install_args = { "--proxy", "\"\"" }
+		install_args = {} --{ "--proxy", "\"\"" }
 	}
 })
 
